@@ -4,31 +4,34 @@ description: Deploy the project to Vercel
 
 # Deploy to Vercel
 
-## ⚠️ Crucial Limitation
-You **cannot** specify the project's **Root Directory** inside `vercel.json`. Vercel needs to know where the project lives *before* it reads any configuration. **You MUST set this in the Vercel Dashboard.**
+## Prerequisite: Root Directory Setup
+You **MUST** set the **Root Directory** in Vercel to `anime-urdu-landing` before deploying.
+1.  **Vercel Dashboard** > **Settings** > **General** > **Root Directory** > Edit > `anime-urdu-landing`.
 
-## Step 1: Configure Root Directory (Once)
-1.  Go to **Vercel Dashboard** > Select your project.
-2.  Click **Settings** > **General**.
-3.  Find **Root Directory**.
-4.  Click **Edit** and set it to: `anime-urdu-landing`.
-5.  Click **Save**.
+## Deployment Steps
 
-## Step 2: Deploy
-Run the following command in the **root** folder (`d:\CODING_DATA\Anime-Urdu`):
-```powershell
-// turbo
-vercel
-```
+1.  **Navigate to the REPOSITORY root**:
+    If you are currently in `anime-urdu-landing`, go back one folder:
+    ```powershell
+    cd ..
+    ```
+    You should be in `D:\CODING_DATA\Anime-Urdu`.
 
-## Step 3: Verify Settings (Auto-Detected)
-Once the Root Directory is set correctly, Vercel will automatically detect:
-- **Framework Preset**: Vite
-- **Build Command**: `vite build`
-- **Output Directory**: `dist`
+2.  **Run the deploy command**:
+    ```powershell
+    npx vercel
+    ```
+    
+    *Why?* Since you told Vercel the project is in `anime-urdu-landing`, running the command from the *parent* folder allows Vercel to find it correctly. If you run it *inside* the folder, Vercel looks for `anime-urdu-landing/anime-urdu-landing`, which fails.
 
-If it asks, confirm these settings.
+3.  **Confirm Settings**:
+    If asked, keep default settings:
+    - **Framework**: Vite
+    - **Build Command**: `vite build`
+    - **Output Directory**: `dist`
 
-## `vercel.json`
-I have added a `vercel.json` file to the project. It handles **Rewrites** (ensuring the site works if you add more pages later).
-**Note:** It *cannot* control the Build Settings or Root Directory. Those remain in the Dashboard.
+4.  **Production Deploy**:
+    To publish the live version:
+    ```powershell
+    npx vercel --prod
+    ```
