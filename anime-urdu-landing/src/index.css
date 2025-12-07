@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-evaDark text-white overflow-x-hidden;
+    font-family: 'Rajdhani', sans-serif;
+  }
+}
