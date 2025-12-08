@@ -27,7 +27,7 @@ const Hero = () => {
 
                 {/* Title & Subtitle */}
                 <h1 className="text-6xl md:text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-evaGreen via-white to-evaPurple drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]">
-                    ANIME URDU
+                    ANIME اُردو
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-300 tracking-widest uppercase border-l-4 border-evaPurple pl-4 bg-black/50 backdrop-blur-sm p-2">
                     Neon Evangelion Themed WhatsApp Anime Community
