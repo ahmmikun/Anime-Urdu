@@ -20,7 +20,7 @@ const Hero = () => {
                 <div className="flex-1 text-center md:text-left order-2 md:order-1 space-y-6">
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-evaGreen via-white to-evaPurple drop-shadow-[0_0_10px_rgba(57,255,20,0.8)] pb-2 leading-tight">
                         ANIME <br className="hidden md:block" />
-                        URDU <span className="font-sans tracking-normal inline-block transform -translate-y-1 md:-translate-y-2 text-4xl md:text-7xl text-white">اُردو</span>
+                        <span className="font-sans tracking-normal inline-block transform -translate-y-1 md:-translate-y-2 text-4xl md:text-7xl text-white">اُردو</span>
                     </h1>
                     <p className="text-base md:text-2xl text-gray-300 tracking-widest uppercase border-l-4 border-evaPurple pl-4 bg-black/50 backdrop-blur-sm p-4 inline-block">
                         Neon Genesis Evangelion <br /> WhatsApp Community
