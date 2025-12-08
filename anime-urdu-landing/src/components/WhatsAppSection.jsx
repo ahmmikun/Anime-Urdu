@@ -29,7 +29,7 @@ const WhatsAppSection = () => {
                 {/* Text & Button */}
                 <div className="text-center md:text-left max-w-lg">
                     <h2 className="text-4xl font-bold text-white mb-6 uppercase">
-                        Synch Rate <span className="text-evaGreen">100%</span>
+                        Sync Rate <span className="text-evaGreen">100%</span>
                     </h2>
                     <p className="text-gray-400 mb-8 font-mono">
                         Connect with fellow pilots. Discuss theories, share art, and be part of the most aesthetic anime community on WhatsApp.
