@@ -13,7 +13,7 @@ const AdminList = () => {
     return (
         <section id="admins" className="py-20 bg-evaDark relative border-b border-evaPurple/30">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-bold text-center mb-16 text-evaGreen uppercase tracking-widest drop-shadow-[0_0_5px_rgba(57,255,20,0.8)]">
+                <h2 className="text-2xl md:text-4xl font-bold text-center mb-16 text-evaGreen uppercase tracking-widest drop-shadow-[0_0_5px_rgba(57,255,20,0.8)]">
                     &lt; Human Instrumentality Committee /&gt;
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
