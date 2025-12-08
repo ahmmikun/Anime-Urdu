@@ -4,7 +4,7 @@ import bgImage from '../assets/Web-Asthetics/image-eva.png';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center p-6 border-b-2 border-evaGreen overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center p-6 border-b-2 border-evaGreen overflow-hidden">
             {/* Background Grid & Effects */}
             <div className="absolute inset-0 z-0 bg-evaDark">
                 <div
@@ -14,41 +14,47 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
             </div>
 
-            <div className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-4xl w-full">
-                {/* Logo with Glow */}
-                <div className="relative group animate-pulse-slow">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-evaGreen to-evaPurple rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                    <img
-                        src={logo}
-                        alt="Anime Urdu Logo"
-                        className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-evaGreen object-cover bg-black"
-                    />
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl w-full gap-12">
+
+                {/* Text Content (Left on Desktop, Bottom on Mobile) */}
+                <div className="flex-1 text-center md:text-left order-2 md:order-1 space-y-6">
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-evaGreen via-white to-evaPurple drop-shadow-[0_0_10px_rgba(57,255,20,0.8)] pb-2 leading-tight">
+                        ANIME <br className="hidden md:block" />
+                        URDU <span className="font-sans tracking-normal inline-block transform -translate-y-1 md:-translate-y-2 text-4xl md:text-7xl text-white">اُردو</span>
+                    </h1>
+                    <p className="text-base md:text-2xl text-gray-300 tracking-widest uppercase border-l-4 border-evaPurple pl-4 bg-black/50 backdrop-blur-sm p-4 inline-block">
+                        Neon Genesis Evangelion <br /> WhatsApp Community
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                        <a href="#whatsapp" className="px-8 py-4 bg-evaGreen text-black font-bold uppercase tracking-widest hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(57,255,20,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] text-center">
+                            Join Unit 01
+                        </a>
+                        <a href="#members" className="px-8 py-4 border border-evaPurple text-evaPurple font-bold uppercase tracking-widest hover:bg-evaPurple hover:text-white transition-all duration-300 text-center">
+                            Pilots
+                        </a>
+                    </div>
                 </div>
 
-                {/* Title & Subtitle */}
-                <h1 className="text-4xl md:text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-evaGreen via-white to-evaPurple drop-shadow-[0_0_10px_rgba(57,255,20,0.8)] pb-2">
-                    ANIME URDU
-                </h1>
-                <p className="text-sm md:text-2xl text-gray-300 tracking-widest uppercase border-l-4 border-evaPurple pl-4 bg-black/50 backdrop-blur-sm p-2">
-                    Neon Evangelion Themed WhatsApp Anime Community
-                </p>
-
-                {/* Buttons */}
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mt-8 w-full md:w-auto px-4 md:px-0">
-                    <a href="#whatsapp" className="w-full md:w-auto text-center px-8 py-3 bg-evaGreen/10 border border-evaGreen text-evaGreen hover:bg-evaGreen hover:text-black transition-all duration-300 uppercase tracking-widest font-bold hover:shadow-neon-green backdrop-blur-sm">
-                        Join Group
-                    </a>
-                    <a href="#members" className="w-full md:w-auto text-center px-8 py-3 bg-evaPurple/10 border border-evaPurple text-evaPurple hover:bg-evaPurple hover:text-white transition-all duration-300 uppercase tracking-widest font-bold hover:shadow-neon-purple backdrop-blur-sm">
-                        View Members
-                    </a>
+                {/* Image/Logo Content (Right on Desktop, Top on Mobile) */}
+                <div className="flex-1 flex justify-center md:justify-end order-1 md:order-2 relative">
+                    <div className="relative w-64 h-64 md:w-96 md:h-96 group animate-float">
+                        <div className="absolute -inset-4 bg-gradient-to-tr from-evaGreen to-evaPurple rounded-full blur-xl opacity-50 group-hover:opacity-80 transition duration-1000"></div>
+                        <img
+                            src={logo}
+                            alt="Anime Urdu Logo"
+                            className="relative w-full h-full rounded-full border-4 border-evaGreen object-cover bg-black shadow-2xl"
+                        />
+                        {/* Orbiting Elements */}
+                        <div className="absolute inset-0 rounded-full border border-evaPurple/30 animate-spin-slow"></div>
+                        <div className="absolute -inset-8 rounded-full border border-evaGreen/20 animate-spin-reverse-slow"></div>
+                    </div>
                 </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute top-4 left-4 md:top-10 md:left-10 w-8 h-8 md:w-16 md:h-16 border-t-2 border-l-2 md:border-t-4 md:border-l-4 border-evaGreen opacity-70"></div>
-                <div className="absolute bottom-4 right-4 md:bottom-10 md:right-10 w-8 h-8 md:w-16 md:h-16 border-b-2 border-r-2 md:border-b-4 md:border-r-4 border-evaPurple opacity-70"></div>
-                <div className="absolute top-4 right-4 md:top-10 md:right-10 w-8 h-8 md:w-16 md:h-16 border-t-2 border-r-2 md:border-t-4 md:border-r-4 border-evaPurple opacity-70"></div>
-                <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 w-8 h-8 md:w-16 md:h-16 border-b-2 border-l-2 md:border-b-4 md:border-l-4 border-evaGreen opacity-70"></div>
             </div>
+
+            {/* Decorative Elements */}
+            <div className="absolute top-10 left-10 w-32 h-32 border-t-2 border-l-2 border-evaGreen opacity-50 pointer-events-none hidden md:block"></div>
+            <div className="absolute bottom-10 right-10 w-32 h-32 border-b-2 border-r-2 border-evaPurple opacity-50 pointer-events-none hidden md:block"></div>
         </section>
     );
 };
