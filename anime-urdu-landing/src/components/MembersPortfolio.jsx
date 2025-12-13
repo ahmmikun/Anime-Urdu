@@ -8,6 +8,8 @@ import asadImg from '../assets/member-images/Asad.png';
 import noumanImg from '../assets/member-images/Nouman.png';
 import hashimImg from '../assets/member-images/Hashim.png';
 
+import placeholderImg from '../assets/member-images/sample-profile.png';
+
 const members = [
     { id: 1, name: "Saif-ul-Islam", username: "Safina Chan 💗", img: saifImg },
     { id: 2, name: "Mister Fukie", username: "At the Movies", img: fukieImg },
@@ -17,6 +19,14 @@ const members = [
     { id: 6, name: "Asad", username: "The Edits Freak", img: asadImg },
     { id: 7, name: "Nouman", username: "Cristiano Ronaldo Fan", img: noumanImg },
     { id: 8, name: "Hashim", username: "The SpongeBob", img: hashimImg },
+    { id: 9, name: "Qami", username: "BUB🦇", img: placeholderImg },
+    { id: 10, name: "Shameel", username: "گمبارے گمبارے سینپائی", img: placeholderImg },
+    { id: 11, name: "Abdul Haseeb", username: "Blender", img: placeholderImg },
+    { id: 12, name: "Ahmad Memon", username: "One Piece Fan", img: placeholderImg },
+    { id: 13, name: "Shayan", username: "The only New Member", img: placeholderImg },
+    { id: 14, name: "Zuhaz", username: "Pro Codder", img: placeholderImg },
+    { id: 15, name: "Lamama Derzin", username: "The Frieren Slayer", img: placeholderImg },
+    { id: 16, name: "Shaheer", username: "Eren Yeager", img: placeholderImg },
 ];
 
 const MembersPortfolio = () => {
